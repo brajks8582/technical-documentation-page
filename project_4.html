@@ -1,5 +1,33 @@
 <style>
+#body-div {
+    display: flex;
+}
 
+#nav-div {
+    width: 20%;
+    height: 100%;
+}
+header {
+    font-size: 2em;
+}
+
+li {
+    margin: 5%;
+}
+.nav-link {
+    font-size: 1.7em;
+}
+
+.vl {
+  width: 2%;  
+  border-left: 6px solid black;
+  height: 100em;
+}
+#content-div {
+    width: 78%;
+    height: 100%;
+    background-color: black;
+}
 </style>
 
 
@@ -10,6 +38,25 @@
         </title>
     </head>
     <body>
-        
+      <div id="body-div"> 
+          <div id="nav-div">     <nav id="navbar">
+        <header>ARDUINO Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#Arduino_Boards">Arduino Boards</a></li>
+          <li><a class="nav-link" href="#Software">Software</a></li>
+          <li><a class="nav-link" href="#Programing">Programing</a></li>
+          <li><a class="nav-link" href="#Sound">Sound</a></li>
+          <li><a class="nav-link" href="#Sensors">Sensors</a></li>
+          <li><a class="nav-link" href="#Storage">Storage</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="vl"></div> 
+    <div id="content-div">
+            
+    </div>
+
+    </div> 
     </body>
 </html>
