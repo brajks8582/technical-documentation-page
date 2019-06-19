@@ -3,31 +3,161 @@
     display: flex;
 }
 
+#navbar {
+  position: fixed;
+}
+
 #nav-div {
     width: 20%;
     height: 100%;
+    
 }
-header {
-    font-size: 2em;
+#nav-list {
+  color: orange;
+  position: fixed;
+
+  margin-top: 2em;
 }
 
 li {
-    margin: 5%;
+  margin: 3% 0% 3% 0%;
 }
+
+header {
+    font-size: 2.5em;
+}
+
+
 .nav-link {
-    font-size: 1.7em;
+    font-size: 2.3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .vl {
   width: 2%;  
+  margin-left: 18.1em;
   border-left: 6px solid black;
   height: 100em;
+  position: fixed;
 }
+
 #content-div {
     width: 78%;
     height: 100%;
-    background-color: black;
+    background-color: yellow;
 }
+
+.boards_div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.boards_contents {
+  width: 70%;
+}
+
+.boards_img {
+  width: 30%;
+}
+
+
+
+.sound_div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sound_contents {
+  width: 70%;
+}
+
+.sound_img {
+  width: 30%;
+}
+
+
+
+.sensor_div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sensor_contents {
+  width: 70%;
+}
+
+.sensor_img {
+  width: 30%;
+}
+
+
+
+.storage_div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.storage_contents {
+  width: 70%;
+}
+
+.storage_img {
+  width: 30%;
+}
+
+
+.body-header {
+  font-size: 2.5em;
+  margin: 7% 0% 2% 0%;
+}
+
+#intro {
+  margin-top: 0.5%;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.content-label {
+
+  font-size: 1.6em;
+  
+}
+
+
+#Introduction-list {
+  font-size: 1.2em;
+  
+}
+
+.board-list {
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.software-list {
+  font-size: 1.2em;
+}
+
+.programing-list {
+  font-size: 1.2em; 
+}
+
+.sound-list {
+  font-size: 1.2em;
+}
+
+.sensor-list {
+  font-size: 1.2em;
+}
+
+.storage-list {
+  font-size: 1.2em; 
+}
+
+
 </style>
 
 
@@ -40,8 +170,8 @@ li {
     <body>
       <div id="body-div"> 
           <div id="nav-div">     <nav id="navbar">
-        <header>ARDUINO Documentation</header>
-        <ul>
+        <header>ARDUINO Doc.</header>
+        <ul id="nav-list">
           <li><a class="nav-link" href="#Introduction">Introduction</a></li>
           <li><a class="nav-link" href="#Arduino_Boards">Arduino Boards</a></li>
           <li><a class="nav-link" href="#Software">Software</a></li>
@@ -55,6 +185,1099 @@ li {
     <div class="vl"></div> 
     <div id="content-div">
             
+      <main id="main-doc">
+          <section class="main-section" id="Introduction">
+              <header class="body-header" id="intro">Introduction</header>
+              <article>
+                <p>
+                    Arduino is an open-source hardware and software company, project and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control both physically and digitally. Its products are licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL),[1] permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially in preassembled form or as do-it-yourself (DIY) kits.
+                </p>
+          
+                <p>
+                    Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards or breadboards (shields) and other circuits. The boards feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs from personal computers. The microcontrollers are typically programmed using a dialect of features from the programming languages C and C++. In addition to using traditional compiler toolchains, the Arduino project provides an integrated development environment (IDE) based on the Processing language project
+                </p>
+                
+                <p>
+                    The Arduino project started in 2005 as a program for students at the Interaction Design Institute Ivrea in Ivrea, Italy,[2] aiming to provide a low-cost and easy way for novices and professionals to create devices that interact with their environment using sensors and actuators. Common examples of such devices intended for beginner hobbyists include simple robots, thermostats and motion detectors.
+                </p>
+
+                <p>
+                  <label class="content-label" >The 5 Major Benefits of Using Arduino Starter Kits</label>
+                  <ul id="Introduction-list" >
+                    <li>Inexpensive - Arduino boards are relatively inexpensive compared to other microcontroller platforms. The least expensive version of the Arduino module can be assembled by hand, and even the pre-assembled Arduino modules cost less than $50.</li>
+                    <li>Cross-platform - The Arduino software runs on Windows, Macintosh OSX, and Linux operating systems. Most microcontroller systems are limited to Windows.</li>
+                    <li>Simple, clear programming environment - The Arduino programming environment is easy-to-use for beginners, yet flexible enough for advanced users to take advantage of as well. For teachers, it's conveniently based on the Processing programming environment, so students learning to program in that environment will be familiar with the look and feel of Arduino.</li>
+                    <li>Open source and extensible software - The Arduino software is published as open source tools, available for extension by experienced programmers. The language can be expanded through C++ libraries, and people wanting to understand the technical details can make the leap from Arduino to the AVR C programming language on which it's based. Similarly, you can add AVR-C code directly into your Arduino programs if you want to. </li>
+                    <li>Open source and extensible hardware - The Arduino is based on Atmel's ATMEGA8 and ATMEGA168 microcontrollers. The plans for the modules are published under a Creative Commons license, so experienced circuit designers can make their own version of the module, extending it and improving it. Even relatively inexperienced users can build the breadboard version of the module in order to understand how it works and save money.</li>
+                  </ul>
+                </p>
+              </article>
+            </section>
+            
+            <section class="main-section" id="Arduino_Boards">
+              <header class="body-header" >Arduino Boards</header>
+
+              <div class="boards_div"  id="uno">
+                <div class="boards_contents">
+                  <label class="content-label">Arduino UNO</label>
+                  <ul class="board-list">
+                    <li>
+                        Most
+                        popular
+                        board.
+                        Ideal
+                        for
+                        starters.
+                    </li>
+                    <li>
+                      Standard USB for data, power and programming.
+                    </li>
+                    <li>
+                      power input connector.
+                    </li>
+                    <li>
+                      Female Headers
+                    </li>
+                    <li>
+                      14 digital I/O ports
+                    </li>
+                    <li>
+                      6 analog inputs
+                    </li>
+                    <li>
+                      1 hardware serial port(UART).
+                    </li>
+                  </ul>
+                </div>
+                <div class="boards_img">
+                  <img alt="Arduino uno " id="uno_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLA9QW7-4dM_ldfJqCjGUfLcK-NmgobmmlUD71b1IKAsyzF54GGA">
+                </div>
+              </div>
+
+              <div class="boards_div" id="nano">
+                  <div class="boards_contents">
+                    <label class="content-label">Arduino Nano</label>
+                    <ul class="board-list" >
+                      <li>Much Smaller than uno
+                      </li>
+                      <li>
+                        Mini USB for data, power and programming.
+                      </li>
+                      <li>
+                        input 6-20 V on Vinn(6-12 recommended)
+                      </li>
+                      <li>
+                        Male Headers
+                      </li>
+                      <li>
+                        14 digital I/O ports
+                      </li>
+                      <li>
+                        8 analog inputs
+                      </li>
+                      <li>
+                        1 hardware serial port(UART).
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="boards_img">
+                    <img alt="Arduino nano " id="nano_img" src="data:image/jpeg;base64,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">
+                  </div>
+                </div>
+
+
+                <div class="boards_div" id="mini">
+                  <div class="boards_contents">
+                    <label class="content-label">Arduino Mini</label>
+                    <ul class="board-list" >
+                      <li>
+                         Smallest Arduino Board,Used in small sized projects
+                      </li>
+                      <li>
+                          No USB connector,You need USB to serial convertor to program this board
+                      </li>
+                      <li>
+                        No separate power connector 
+                      </li>
+                      <li>
+                        Input 7-9V
+                      </li>
+                      <li>
+                        Male Headers
+                      </li> 
+                      <li>
+                        14 digital I/O ports
+                      </li>
+                      <li>
+                        8 analog inputs
+                      </li>
+                      <li>
+                        No hardware serial port(UART).
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="boards_img">
+                    <img alt="Arduino Mini " id="mini_img" src="data:image/jpeg;base64,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">
+                  </div>
+                </div>
+
+
+                
+
+                <div class="boards_div" id="mega">
+                  <div class="boards_contents">
+                    <label class="content-label">Arduino Mega</label>
+                    <ul class="board-list" >
+                      <li>
+                         Largest Arduino board for large number of I/O ports.
+                      </li>
+                      <li>
+                        Normal Size USB for data,power and programming
+                      </li>
+                      <li>
+                        Power Input Connector
+                      </li>
+                      <li>
+                        Input 6-12V 
+                      </li>
+                      <li>
+                        Femal Headers
+                      </li> 
+                      <li>
+                        54 digital I/O ports
+                      </li>
+                      <li>
+                        16 analog inputs
+                      </li>
+                      <li>
+                        4 hardware serial port(UART).
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="boards_img">
+                    <img alt="Arduino Mega " id="mini_mega" src="data:image/jpeg;base64,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">
+                  </div>
+                </div>
+
+            </section>
+
+            <section class="main-section" id="Software">
+                <header class="body-header" >Software</header>
+
+                <p>This section describe Arduino IDE ,the software you need to program your arduino and also other application like processing   to communicate with  your computer and Fritizing to make electronic drawings.</p>
+                <p>
+                    <ul class="software-list" >
+                      <li><label class="content-label">Arduino IDE</label>:<br>To
+                        edit,
+                        compile
+                        and
+                        upload
+                        software
+                        projects
+                        (sketches)
+                        from
+                        your
+                        computer,
+                        you
+                        need
+                        at
+                        least
+                        the
+                        Arduino
+                        IDE.
+                        Two
+                        other
+                        peace’s
+                        of
+                        software
+                        are
+                        also
+                        recommended,
+                        i.e.
+                        Processing
+                        for
+                        the
+                        connection
+                        between
+                        your
+                        Arduino
+                        projects
+                        and
+                        your
+                        computer
+                        and
+                        Fritzing
+                        to
+                        create
+                        drawings.
+                        This
+                        chapter
+                        describes
+                        the
+                        Arduino
+                        IDE,
+                        Processing
+                        and
+                        Fritzing
+                        are
+                        described
+                        in
+                        the
+                        following
+                        chapters.<br><br>
+                      <label class="content-label">Arduino
+                          IDE
+                          software:<br></label>With
+                          this
+                          Arduino
+                          Integrated
+                          Development
+                          Environment
+                          you
+                          can
+                          edit,
+                          compile
+                          and
+                          upload
+                          Arduino
+                          sketches
+                          to
+                          the
+                          Arduino
+                          boards.
+                          In
+                          this
+                          document
+                          I
+                          refer
+                          to
+                          version
+                          1.6.5,
+                          available
+                          for
+                          Windows,
+                          OS
+                          X
+                          and
+                          Linux
+                          (and
+                          an
+                          older
+                          version
+                          for
+                          Raspberry
+                          Pi) </li>
+
+
+                          <li><label class="content-label">Processing:<br> </label>
+                            Processing
+                            is
+                            a
+                            programming
+                            language,
+                            development
+                            environment
+                            targeted
+                            to
+                            visual
+                            arts.
+                            It
+                            can
+                            easily
+                            connect
+                            with
+                            your
+                            Arduino
+                            project
+                            through
+                            the
+                            Serial
+                            port
+                            (through
+                            USB).
+                            For
+                            example,
+                            you
+                            can
+                            use
+                            your
+                            Arduino
+                            to
+                            read
+                            the
+                            position
+                            of
+                            a
+                            joystick
+                            and
+                            send
+                            this
+                            to
+                            Processing
+                            to
+                            make
+                            a
+                            cube
+                            turn
+                            around.<br><br>
+                          <label class="content-label" >List of Serial ports: <br></label>
+                          When
+                          using
+                          Processing
+                          to
+                          communicate
+                          with
+                          an
+                          Arduino
+                          board,
+                          you
+                          need
+                          to
+                          determine
+                          the
+                          name
+                          of
+                          the
+                          serial
+                          port
+                          through
+                          which
+                          the
+                          Arduino
+                          is
+                          connected
+                          to
+                          the
+                          computer.
+                          The
+                          following
+                          Processing
+                          sketch
+                          can
+                          be
+                          used
+                          to
+                          show
+                          all
+                          available
+                          serial
+                          ports
+                          and
+                          all
+                          data
+                          coming
+                          in
+                          through
+                          one
+                          specific
+                          port.
+                        </li>
+
+                        <li>
+                          <label class="content-label" >Fritzing:<br></label>
+                          Fritzing
+                          is
+                          a
+                          tool
+                          you
+                          can
+                          use
+                          to
+                          create
+                          drawings
+                          of
+                          your
+                          Arduino
+                          projects.
+                          In
+                          Fritzing
+                          you
+                          can
+                          draw
+                          in
+                          three
+                          different
+                          environments:
+                          Breadboard,
+                          Schematic
+                          and
+                          PCB.
+                          You
+                          can
+                          switch
+                          between
+                          these
+                          three
+                          environments
+                          at
+                          will.
+                          You
+                          can
+                          use
+                          Fritzing
+                          to
+                          document
+                          your
+                          projects,
+                          check
+                          your
+                          design,
+                          route
+                          the
+                          connections
+                          on
+                          a
+                          breadboard
+                          or
+                          create
+                          a
+                          PCB
+                          (Printed
+                          Circuit
+                          Board)
+                          to
+                          build
+                          your
+                          own
+                          Arduino
+                          shield.
+                          Fritzing
+                          is
+                          not
+                          limited
+                          to
+                          Arduino.
+                        </li>
+                    </ul>
+
+                </p>
+            
+              </section>
+
+              <section class="main-section" id="Programing">
+                <header class="body-header" >Programing</header>
+                  <p>There
+                      are
+                      different
+                      ways
+                      to
+                      program
+                      an
+                      Arduino
+                      board
+                      or
+                      another
+                      AVR
+                      MCU,
+                      using
+                      different
+                      techniques
+                      (programming)
+                      or
+                      equipment
+                      (programmers).
+                      In
+                      most
+                      situations
+                      you
+                      will
+                      program
+                      an
+                      Arduino
+                      board
+                      through
+                      the
+                      onboard
+                      USB
+                      connector,
+                      but
+                      some
+                      boards
+                      lack
+                      this
+                      connector.
+                      This
+                      chapter
+                      describes
+                      different
+                      programming
+                      techniques
+                      and
+                      different
+                      programmers</p>
+
+                      <p>
+                        <label class="content-label">Programing a sketch sample</label>
+                        <ul class="programing-list">
+                          <li>
+                              Connect
+                              your
+                              Arduino
+                              to
+                              your
+                              computer
+                              using
+                              an
+                              USB
+                              cable.
+                          </li>
+
+                          <li>
+                              Load
+                              the
+                              sketch
+                              you
+                              want
+                              to
+                              compile
+                              and
+                              upload.
+                          </li>
+
+                          <li>
+                              Choose
+                              TOOLS,
+                              BOARD,
+                              then
+                              select
+                              the
+                              correct
+                              Arduino
+                              board.
+                          </li>
+
+                          <li>
+                              Choose
+                              TOOLS,
+                              PROGRAMMER,
+                              AVRISP
+                              mkll.
+                          </li>
+
+                          <li>
+                              Choose
+                              TOOLS,
+                              SERIAL
+                              PORT,
+                              then
+                              select
+                              the
+                              correct
+                              Serial
+                              Port
+                          </li>
+
+                          <li>
+                              Choose
+                              FILE,
+                              UPLOAD.
+                          </li>
+                        </ul>
+                      </p>
+
+              </section>
+
+              <section class="main-section" id="Sound">
+                <header class="body-header" >Sound</header>
+
+                <p>This
+                    section
+                    describes
+                    the
+                    use
+                    of
+                    sound
+                    as
+                    an
+                    output
+                    device.
+                    A
+                    piezo
+                    speaker
+                    to
+                    produce
+                    some
+                    kind
+                    of
+                    musical
+                    notes
+                    and
+                    a
+                    buzzer
+                    to
+                    produce
+                    loud
+                    beeps.</p>
+
+                    <p>
+
+                      
+              <div class="sound_div"  id="buzzer">
+                  <div class="sound_contents">
+                    <label class="content-label" >Buzzer</label>
+                    <ul class="sound-list">
+                      <li>
+                          A
+                          buzzer
+                          is
+                          a
+                          tiny
+                          speaker
+                          that
+                          can
+                          only
+                          produce
+                          a
+                          loud
+                          buzzing
+                          sound.
+                          Playing
+                          notes
+                          is
+                          not
+                          possible
+                          (use
+                          a
+                          piezo
+                          speaker
+                          instead).
+                      </li>
+                      <li>
+                          Voltage:
+                          3.5-­‐5.5V
+                      </li>
+                      <li>
+                          Frequency:
+                          2300Hz
+                      </li>
+                      <li>
+                        Female Headers
+                      </li>
+                     
+                    </ul>
+                  </div>
+                  <div class="sound_img">
+                    <img alt="buzzer " id="buzzer-image" src="https://i.ebayimg.com/00/s/MzMwWDUwMA==/z/3IIAAOSw42JZI-~~/$_35.JPG?set_id=8800005007">
+                  </div>
+                </div>
+  
+                    </p>
+                    
+                    <p>
+
+                        <div class="sound_div"  id="piezo-buzzer">
+                            <div class="sound_contents">
+                              <label class="content-label">Piezo Buzzer</label>
+                              <ul class="sound-list" >
+                                <li>
+                                    A
+                                    piezo
+                                    speaker
+                                    is
+                                    a
+                                    tiny
+                                    speaker
+                                    that
+                                    is
+                                    often
+                                    used
+                                    in
+                                    toys.
+                                </li>
+                                <li>
+                                    Voltage:
+                                    3.5-­‐5.5V
+                                </li>
+                                
+                               
+                              </ul>
+                            </div>
+                            <div class="sound_img">
+                              <img alt="buzzer " id="buzzer-image" src="data:image/jpeg;base64,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">
+                            </div>
+                          </div>
+
+                    </p>
+
+        
+                   
+              </section>
+
+                <section class="main-section" id="Sensors">
+                  <header class="body-header" >Sensors</header>
+                  <P>
+                      This
+                      section
+                      describes
+                      the
+                      use
+                      of
+                      different
+                      kind
+                      of
+                      sensors,
+                      temperature,
+                      humidity,
+                      distance
+                      and
+                      more
+                  </P>
+
+                  <p>
+                    
+                      <div class="sensor_div"  id="temperature-sensor">
+                          <div class="sensor_contents">
+                            <label class="content-label" >temperature-sensor LM35</label>
+                            <ul class="sensor-list">
+                              <li>
+                                  This
+                                  sensor
+                                  measures
+                                  the
+                                  temperature
+                                  in
+                                  Centigrade.
+                              </li>
+                              <li>
+                                  Linear
+                                  scale
+                                  +10
+                                  mV/
+                                  0C.
+                              </li>
+                              <li>
+                                  0.5
+                                  0C
+                                  accuracy
+                                  at
+                                  +25
+                                  0C.
+                              </li>
+                              <li>
+                                  Range:
+                                  -­‐55..+150
+                                  0C
+                              </li>
+                              
+                             
+                            </ul>
+                          </div>
+                          <div class="sensor_img">
+                            <img alt="LM35 temperature-sensor " id="LM35-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yW84sgI2kk1W4KhNdYQmmbsTDnqjoZ0t4C-7phmqTjV44M2NZA">
+                          </div>
+                        </div>
+
+                  </p>
+                  
+                    <p>
+
+                        
+                      <div class="sensor_div"  id="water-sensor">
+                          <div class="sensor_contents">
+                            <label class="content-label" >Water Sensor</label>
+                            <ul class="sensor-list" >
+                              <li>
+                                  This
+                                  sensor
+                                  can
+                                  read
+                                  the
+                                  liquid
+                                  level
+                                  in
+                                  a
+                                  container.
+                              </li>
+                              <li>
+
+                                  Sensing Area(non-linear) : 2  
+                              </li>
+                              <li>
+                                  dimension: 2*4cm
+                              </li>
+                              
+                             
+                            </ul>
+                          </div>
+                          <div class="sensor_img">
+                            <img alt="water sensor " id="water-sensor-image" src="https://5.imimg.com/data5/OI/RE/MY-1833510/water-level-sensor-500x500.jpg">
+                          </div>
+                        </div>
+                    </p>
+
+                    <p>
+                    <div class="sensor_div"  id="distance-sensor">
+                        <div class="sensor_contents">
+                          <label class="content-label" >Distance Sensor HC-SR04</label>
+                          <ul class="sensor-list" >
+                            <li>
+                                This
+                                module
+                                sends
+                                a
+                                TTL
+                                sound
+                                and
+                                measures
+                                the
+                                reflection
+                                time,
+                                so
+                                you
+                                can
+                                calculate
+                                the
+                                distance
+                                to
+                                an
+                                object.
+                            </li>
+                            <li>
+                                Distance:
+                                2-­‐500
+                                cm.
+                            </li>
+                            <li>
+                                Accuracy
+                                :
+                                0,3
+                                cm.
+                            </li>
+                            <li>
+                                Angle:
+                                15
+                                degrees.
+                            </li>
+                           
+                          </ul>
+                        </div>
+                        <div class="sensor_img">
+                          <img alt="distance sensor " id="distance-sensor-image" src="https://images-na.ssl-images-amazon.com/images/I/61tm2UoPIlL._SX569_.jpg">
+                        </div>
+                      </div>
+                  </p>
+
+                  
+                  <p>
+                      <div class="sensor_div"  id="photo-resistor">
+                          <div class="sensor_contents">
+                            <label class="content-label" >Photo Resistor LDR</label>
+                            <ul class="sensor-list" >
+                              <li>
+                                  LDR
+                                  stands
+                                  for
+                                  Light
+                                  Dependent
+                                  Resistor.
+                                  The
+                                  resistance
+                                  of
+                                  a
+                                  LDR
+                                  decreases
+                                  when
+                                  the
+                                  light
+                                  intensity
+                                  increases.
+                                  The
+                                  accuracy
+                                  of
+                                  these
+                                  devices
+                                  is
+                                  very
+                                  low,
+                                  they
+                                  are
+                                  mainly
+                                  used
+                                  to
+                                  detect
+                                  is
+                                  it
+                                  light
+                                  or
+                                  dark.
+                              </li>
+                              <li>
+                                  Resistance
+                                  range:
+                                  5M
+                                  ohm
+                                  (dark)
+                                  –
+                                  100
+                                  ohm
+                                  (directly
+                                  under
+                                  a
+                                  bright
+                                  light).
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="sensor_img">
+                            <img alt="photo-resistor " id="photo-reistor-image" src="data:image/jpeg;base64,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">
+                          </div>
+                        </div>
+                    </p>
+  
+                </section>
+
+                <section class="main-section" id="Storage">
+                  <header class="body-header" >Storage</header>
+                  <p>
+                    This
+                    section
+                    describe
+                    the
+                    use
+                    of
+                    storage
+                    devices
+                    on
+                    your
+                    Arduino
+                    board,
+                    like
+                    an
+                    SD
+                    card,
+                    but
+                    also
+                    the
+                    use
+                    of
+                    RFID
+                    cards.
+                  </p>
+
+                  <p>
+                      
+                    <div class="storage_div"  id="sd-card">
+                      <div class="storage_contents">
+                        <label class="content-label">SD Card</label>
+                        <ul class="sensor-list"> 
+                          <li>
+                              LDR
+                              stands
+                              for
+                              Light
+                              Dependent
+                              Resistor.
+                              The
+                              resistance
+                              of
+                              a
+                              LDR
+                              decreases
+                              when
+                              the
+                              light
+                              intensity
+                              increases.
+                              The
+                              accuracy
+                              of
+                              these
+                              devices
+                              is
+                              very
+                              low,
+                              they
+                              are
+                              mainly
+                              used
+                              to
+                              detect
+                              is
+                              it
+                              light
+                              or
+                              dark.
+                          </li>
+                          <li>
+                            LC-­‐TECH
+                            SD
+                          </li>
+
+                          <li>
+                            Secure
+                            Digital
+                            card
+                            library
+                            included
+                            with
+                            Arduino
+                            IDE
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="storage_img">
+                        <img alt="sd card " id="sd-card-image" src="data:image/jpeg;base64,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">
+                      </div>
+                    </div>
+                  </p>
+
+                  
+                  <p>
+                      
+                    <div class="storage_div"  id="minifare-rfid">
+                      <div class="storage_contents">
+                        <label class="content-label">Minifare RFID RC522</label>
+                        <ul  class="sensor-list">
+                          <li>
+                            Contactless
+                            RFID
+                            reader/writer.
+                          </li>
+                          <li>
+                              Supports
+                              all
+                              variant
+                              of
+                              the
+                              MIFARE
+                              mini,
+                              1K,
+                              4K,
+                              Ultralight,
+                              DESFire
+                              EV1
+                              and
+                              MIFARE
+                              Plus
+                              products.
+                          </li>
+
+                          <li>
+                              SPI
+                              up
+                              to
+                              10
+                              Mbits/s.
+                          </li>
+
+                          <li>
+                              Up
+                              to
+                              50
+                              mm.
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="storage_img">
+                        <img alt="RFID Card " id="rfid-card-image" src="https://www.dnatechindia.com/image/cache/catalog/rc522-a-500x500.jpg">
+                      </div>
+                    </div>
+                  </p>
+
+                </section>
+      </main>     
     </div>
 
     </div> 
